@@ -209,3 +209,38 @@ html.lenis body {
     animation: none;
   }
 }
+
+/* Flowing medium inside hero pipes */
+@keyframes pipe-flow {
+  to {
+    stroke-dashoffset: -400;
+  }
+}
+
+.pipe-flow {
+  stroke-dasharray: 4 22;
+  animation: pipe-flow 6s linear infinite;
+}
+
+@keyframes gauge-sweep {
+  0%,
+  100% {
+    transform: rotate(-38deg);
+  }
+  50% {
+    transform: rotate(42deg);
+  }
+}
+
+.gauge-needle {
+  transform-box: fill-box;
+  transform-origin: bottom;
+  animation: gauge-sweep 7s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pipe-flow,
+  .gauge-needle {
+    animation: none;
+  }
+}

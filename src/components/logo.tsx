@@ -9,18 +9,23 @@ export default function Logo({
   className,
   showText = true,
   markClassName,
+  size = "default",
 }: {
   className?: string;
   showText?: boolean;
   markClassName?: string;
+  size?: "default" | "lg";
 }) {
+  const lg = size === "lg";
   return (
-    <span className={cn("inline-flex items-center gap-2.5", className)}>
+    <span
+      className={cn("inline-flex items-center", lg ? "gap-3" : "gap-2.5", className)}
+    >
       <svg
         viewBox="0 0 48 48"
         fill="none"
         aria-hidden="true"
-        className={cn("size-8 text-primary", markClassName)}
+        className={cn(lg ? "size-12" : "size-8", "text-primary", markClassName)}
       >
         {/* Gateway arch */}
         <path
@@ -44,10 +49,20 @@ export default function Logo({
       </svg>
       {showText && (
         <span className="flex flex-col leading-none">
-          <span className="font-mono text-sm font-semibold uppercase tracking-[0.18em]">
+          <span
+            className={cn(
+              "font-mono font-semibold uppercase tracking-[0.18em]",
+              lg ? "text-lg" : "text-sm",
+            )}
+          >
             Bab Al Masaar
           </span>
-          <span className="mt-1 font-mono text-[0.58rem] uppercase tracking-[0.22em] text-muted-foreground">
+          <span
+            className={cn(
+              "mt-1 font-mono uppercase tracking-[0.22em] text-muted-foreground",
+              lg ? "text-[0.64rem]" : "text-[0.58rem]",
+            )}
+          >
             Technical Services L.L.C
           </span>
         </span>

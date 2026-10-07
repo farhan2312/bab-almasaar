@@ -22,6 +22,7 @@ import {
   Check,
 } from "lucide-react";
 import Logo from "@/components/logo";
+import HeroPipes from "@/components/hero-pipes";
 import Marquee from "@/components/marquee";
 import CountUp from "@/components/count-up";
 import Reveal from "@/components/reveal";
@@ -155,8 +156,8 @@ export default function Home() {
     <div className="flex min-h-screen flex-col">
       {/* Header */}
       <header className="fixed inset-x-0 top-0 z-50 border-b border-border bg-background/80 backdrop-blur-md">
-        <div className="mx-auto flex h-16 w-full max-w-6xl items-center justify-between px-6">
-          <Logo />
+        <div className="mx-auto flex h-20 w-full max-w-6xl items-center justify-between px-6">
+          <Logo size="lg" />
           <nav className="hidden items-center gap-8 md:flex">
             {[
               ["Services", "#services"],
@@ -191,20 +192,13 @@ export default function Home() {
       </header>
 
       {/* Hero */}
-      <section className="relative isolate flex min-h-screen items-center">
-        <Image
-          src="/works/hero.jpg"
-          alt="Completed building by Bab Al Masaar in Dubai"
-          fill
-          priority
-          sizes="100vw"
-          className="-z-20 object-cover"
-        />
+      <section className="relative isolate flex min-h-screen items-center overflow-hidden bg-[#081d1a]">
+        <HeroPipes />
         <div
           className="absolute inset-0 -z-10"
           style={{
             background:
-              "linear-gradient(100deg, oklch(0.18 0.02 175 / 0.92) 0%, oklch(0.2 0.03 175 / 0.72) 55%, oklch(0.42 0.08 172 / 0.55) 100%)",
+              "linear-gradient(100deg, rgba(6,20,18,0.96) 0%, rgba(6,20,18,0.82) 42%, rgba(6,20,18,0.22) 100%)",
           }}
         />
         <div className="relative mx-auto w-full max-w-6xl px-6 pt-16">
@@ -279,7 +273,7 @@ export default function Home() {
       {/* Services */}
       <section
         id="services"
-        className="mx-auto w-full max-w-6xl scroll-mt-16 px-6 py-24 md:py-32"
+        className="mx-auto w-full max-w-6xl scroll-mt-20 px-6 py-24 md:py-32"
       >
         <Reveal>
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.25em] text-primary">
@@ -372,7 +366,7 @@ export default function Home() {
       {/* Our Work */}
       <section
         id="work"
-        className="mx-auto w-full max-w-6xl scroll-mt-16 px-6 py-24 md:py-32"
+        className="mx-auto w-full max-w-6xl scroll-mt-20 px-6 py-24 md:py-32"
       >
         <Reveal>
           <p className="mb-4 font-mono text-xs uppercase tracking-[0.25em] text-primary">
@@ -428,7 +422,7 @@ export default function Home() {
       {/* Contact / CTA */}
       <section
         id="contact"
-        className="scroll-mt-16 border-t border-border bg-primary text-primary-foreground"
+        className="scroll-mt-20 border-t border-border bg-primary text-primary-foreground"
       >
         <div className="mx-auto grid w-full max-w-6xl gap-12 px-6 py-20 md:grid-cols-2 md:py-28">
           <Reveal>
