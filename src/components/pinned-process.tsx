@@ -7,18 +7,23 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 const STEPS = [
   {
     n: "01",
-    title: "Sourcing",
-    body: "Qualified supply lines and material procurement, coordinated end to end.",
+    title: "Consult & Survey",
+    body: "A site visit, accurate measurement and a clear, fixed quotation — no surprises.",
   },
   {
     n: "02",
-    title: "Logistics",
-    body: "Freight, customs and last-mile movement across the region, tracked throughout.",
+    title: "Execute",
+    body: "Skilled multi-trade teams deliver MEP, finishing and fit-out works to schedule.",
   },
   {
     n: "03",
-    title: "Delivery",
-    body: "On-site handover with full documentation and quality verification.",
+    title: "Finish & Handover",
+    body: "Snagging, deep cleaning and an on-time handover you can sign off with confidence.",
+  },
+  {
+    n: "04",
+    title: "Maintain",
+    body: "Ongoing AC and building maintenance through flexible annual contracts (AMC).",
   },
 ];
 
@@ -72,7 +77,7 @@ export default function PinnedProcess() {
       >
         <div className="mx-auto w-full max-w-6xl px-6">
           <p className="mb-10 font-mono text-xs uppercase tracking-[0.25em] text-muted-foreground">
-            / Process
+            / How We Work
           </p>
 
           <div className="grid gap-10 md:grid-cols-[1fr_1.4fr] md:gap-20">
