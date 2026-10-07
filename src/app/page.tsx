@@ -489,7 +489,7 @@ export default function Home() {
                 {
                   Icon: Clock,
                   label: "Working Hours",
-                  value: "Sat – Thu · 8:00 AM – 6:00 PM",
+                  value: "Sat - Thu · 8:00 AM - 6:00 PM",
                 },
               ].map((c) => {
                 const content = (
