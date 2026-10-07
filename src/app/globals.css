@@ -51,7 +51,7 @@
 }
 
 :root {
-  /* Brand: Bab Al Masaar — deep teal + gold on a clean off-white base */
+  /* Brand: Bab Al Masaar, deep teal + gold on a clean off-white base */
   --background: oklch(0.985 0.004 165);
   --foreground: oklch(0.23 0.018 175);
   --card: oklch(1 0 0);
@@ -142,7 +142,7 @@
   }
 }
 
-/* Lenis smooth scroll — required base styles */
+/* Lenis smooth scroll, required base styles */
 html.lenis,
 html.lenis body {
   height: auto;
@@ -170,7 +170,7 @@ html.lenis body {
   }
 }
 
-/* Hairline grid backdrop — subtle industrial texture */
+/* Hairline grid backdrop, subtle industrial texture */
 .grid-lines {
   background-image:
     linear-gradient(to right, var(--border) 1px, transparent 1px),

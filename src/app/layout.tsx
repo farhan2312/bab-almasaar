@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title:
-    "Bab Al Masaar Technical Services L.L.C — AC, MEP & Fit-Out in Dubai",
+    "Bab Al Masaar Technical Services L.L.C | AC, MEP & Fit-Out in Dubai",
   description:
     "Dubai-based technical services contractor: air-conditioning & MEP maintenance, electrical, plumbing, false ceilings, plastering, painting, tiling, carpentry and fit-out across the UAE.",
 };

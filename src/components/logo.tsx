@@ -1,7 +1,7 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Bab Al Masaar brand lockup — a gateway arch over a skyline + house
+ * Bab Al Masaar brand lockup: a gateway arch over a skyline + house
  * (echoing the business-card emblem), paired with the wordmark.
  * Single-colour (currentColor) so it adapts to light/dark placements.
  */

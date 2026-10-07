@@ -16,7 +16,7 @@ const ITEMS = [
 /**
  * Auto-scrolling services ticker. Content is duplicated once and the track
  * translates by -50% for a seamless loop (pauses on hover, off for
- * reduced-motion). Pure CSS — no JS.
+ * reduced-motion). Pure CSS, no JS.
  */
 export default function Marquee() {
   return (

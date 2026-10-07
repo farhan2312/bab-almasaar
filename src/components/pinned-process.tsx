@@ -8,7 +8,7 @@ const STEPS = [
   {
     n: "01",
     title: "Consult & Survey",
-    body: "A site visit, accurate measurement and a clear, fixed quotation — no surprises.",
+    body: "A site visit, accurate measurement and a clear, fixed quotation. No surprises.",
   },
   {
     n: "02",

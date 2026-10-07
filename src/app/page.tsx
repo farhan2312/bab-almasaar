@@ -10,6 +10,8 @@ import {
   Grid3x3,
   Hammer,
   Sparkles,
+  PanelsTopLeft,
+  Wrench,
   ArrowDown,
   ArrowUpRight,
   Phone,
@@ -34,7 +36,7 @@ const SERVICES = [
   {
     Icon: Wind,
     title: "Air-Conditioning & Ventilation",
-    desc: "AC, ventilation & air-filtration systems — installation and maintenance.",
+    desc: "AC, ventilation & air-filtration systems: installation and maintenance.",
     tag: "MEP",
   },
   {
@@ -90,6 +92,18 @@ const SERVICES = [
     title: "Engraving & Ornamentation",
     desc: "Decorative engraving and ornamental detailing.",
     tag: "Finishing",
+  },
+  {
+    Icon: PanelsTopLeft,
+    title: "Fit-Out & Renovation",
+    desc: "Complete interior fit-out and refurbishment, managed end to end.",
+    tag: "Fit-Out",
+  },
+  {
+    Icon: Wrench,
+    title: "Annual Maintenance (AMC)",
+    desc: "Scheduled building and AC maintenance contracts for villas and buildings.",
+    tag: "Maintenance",
   },
 ];
 
@@ -214,7 +228,7 @@ export default function Home() {
           <Reveal delay={0.22}>
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-white/85 md:text-xl">
               Air-conditioning &amp; MEP maintenance, electrical, plumbing,
-              false ceilings, plastering, painting, tiling and fit-out — one
+              false ceilings, plastering, painting, tiling and fit-out. One
               reliable technical services team in Dubai.
             </p>
           </Reveal>
@@ -323,7 +337,7 @@ export default function Home() {
                 / AC &amp; MEP Maintenance
               </p>
               <h2 className="text-3xl font-semibold tracking-tight md:text-4xl">
-                Keep the cool running — all year round.
+                Keep the cool running, all year round.
               </h2>
               <p className="mt-5 text-muted-foreground">
                 From single split units to full rooftop condenser arrays, our
@@ -379,7 +393,7 @@ export default function Home() {
               <div className="group relative h-full w-full overflow-hidden rounded-sm border border-border">
                 <Image
                   src={w.src}
-                  alt={`${w.title} — ${w.loc}`}
+                  alt={`${w.title}, ${w.loc}`}
                   fill
                   sizes="(max-width: 768px) 50vw, 33vw"
                   className="object-cover transition-transform duration-500 group-hover:scale-105"
@@ -426,8 +440,8 @@ export default function Home() {
                 Request a free site visit &amp; quote.
               </h2>
               <p className="mt-5 max-w-md text-primary-foreground/80">
-                Tell us what you need — AC maintenance, a fit-out or any
-                finishing work — and we&rsquo;ll arrange a visit and a clear
+                Tell us what you need: AC maintenance, a fit-out or any
+                finishing work, and we&rsquo;ll arrange a visit and a clear
                 quotation.
               </p>
 
@@ -515,9 +529,9 @@ export default function Home() {
           <div className="sm:col-span-2 md:col-span-2">
             <Logo />
             <p className="mt-5 max-w-sm text-sm leading-relaxed text-muted-foreground">
-              Bab Al Masaar Technical Services L.L.C — a Dubai-based contractor
-              for AC &amp; MEP maintenance, fit-out and finishing works across
-              the UAE.
+              Bab Al Masaar Technical Services L.L.C is a Dubai-based
+              contractor for AC &amp; MEP maintenance, fit-out and finishing
+              works across the UAE.
             </p>
             <p className="mt-4 font-mono text-[0.65rem] uppercase tracking-[0.15em] text-muted-foreground">
               Dubai DED License No. 1634237
